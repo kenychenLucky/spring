@@ -1,4 +1,5 @@
 package com.example.demo;
+
 import org.gradle.testkit.runner.BuildResult;
 import org.gradle.testkit.runner.GradleRunner;
 import org.junit.Before;
@@ -18,7 +19,8 @@ import static org.junit.Assert.assertTrue;
 import static org.gradle.testkit.runner.TaskOutcome.*;
 
 public class BuildLogicFunctionalTest {
-    @Rule public final TemporaryFolder testProjectDir = new TemporaryFolder();
+    @Rule
+    public final TemporaryFolder testProjectDir = new TemporaryFolder();
     private File settingsFile;
     private File buildFile;
 

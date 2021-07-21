@@ -1,0 +1,87 @@
+plugins {
+    id 'org.springframework.boot' version '2.5.2'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+    id 'jacoco'
+}
+
+group = 'com.kenychen'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+    mavenLocal()
+    maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
+    maven { url 'https://maven.aliyun.com/nexus/content/repositories/jcenter' }
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+    implementation "org.jacoco:org.jacoco.core:0.8.2"
+}
+
+test {
+    useJUnitPlatform()
+    finalizedBy jacocoTestCoverageVerification
+}
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                value = 'COVEREDRATIO'
+                minimum = 0.6
+            }
+        }
+    }
+    dependsOn jacocoTestReport
+}
+
+jacocoTestReport {
+    dependsOn test
+}
+
+pipeline {
+    agent any
+    stages {
+        stage('检出') {
+            steps {
+                checkout([
+                        $class: 'GitSCM',
+                        branches: [[name: '*']],
+                        userRemoteConfigs: [[url: env.GIT_REPO_URL, credentialsId: env.CREDENTIALS_ID]]
+                ])
+            }
+        }
+        stage('测试') {
+            agent {
+                docker {
+                    image 'adoptopenjdk:11-jdk-hotspot'
+                    args '-v /root/.gradle/:/root/.gradle/ -v /root/.m2/:/root/.m2/'
+                    reuseNode true
+                }
+            }
+            steps {
+                sh './gradlew test'
+            }
+            post {
+                // 不管成功失败，都收集简易测试结果
+                always {
+                    junit 'build/test-results/**/*.xml'
+                }
+                // 成功时，才收集测试覆盖率报告
+                success {
+                    codingHtmlReport(name: '测试覆盖率报告', tag: 'test', path: 'build/reports/jacoco/test/html', entryFile: 'index.html')
+                }
+            }
+        }
+    }
+}
+
+
