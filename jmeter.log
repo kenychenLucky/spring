@@ -1,0 +1,145 @@
+2021-08-23 13:39:47,032 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2021-08-23 13:39:47,110 INFO o.a.j.JMeter: Loading user properties from: D:\tools\apache-jmeter-5.4.1\bin\user.properties
+2021-08-23 13:39:47,122 INFO o.a.j.JMeter: Loading system properties from: D:\tools\apache-jmeter-5.4.1\bin\system.properties
+2021-08-23 13:39:47,148 INFO o.a.j.JMeter: Copyright (c) 1998-2021 The Apache Software Foundation
+2021-08-23 13:39:47,148 INFO o.a.j.JMeter: Version 5.4.1
+2021-08-23 13:39:47,148 INFO o.a.j.JMeter: java.version=16.0.2
+2021-08-23 13:39:47,148 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2021-08-23 13:39:47,148 INFO o.a.j.JMeter: os.name=Windows 10
+2021-08-23 13:39:47,148 INFO o.a.j.JMeter: os.arch=amd64
+2021-08-23 13:39:47,148 INFO o.a.j.JMeter: os.version=10.0
+2021-08-23 13:39:47,148 INFO o.a.j.JMeter: file.encoding=GBK
+2021-08-23 13:39:47,149 INFO o.a.j.JMeter: java.awt.headless=null
+2021-08-23 13:39:47,149 INFO o.a.j.JMeter: Max memory     =4294967296
+2021-08-23 13:39:47,149 INFO o.a.j.JMeter: Available Processors =12
+2021-08-23 13:39:47,168 INFO o.a.j.JMeter: Default Locale=English (EN)
+2021-08-23 13:39:47,168 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2021-08-23 13:39:47,168 INFO o.a.j.JMeter: JMeterHome=D:\tools\apache-jmeter-5.4.1
+2021-08-23 13:39:47,169 INFO o.a.j.JMeter: user.dir  =D:\spring
+2021-08-23 13:39:47,169 INFO o.a.j.JMeter: PWD       =D:\spring
+2021-08-23 13:39:51,872 INFO o.a.j.JMeter: IP: 192.168.226.1 Name: KENY-PC FullName: KENY-PC
+2021-08-23 13:39:52,243 INFO o.a.j.JMeter: Setting LAF to: com.github.weisj.darklaf.DarkLaf:com.github.weisj.darklaf.theme.IntelliJTheme
+2021-08-23 13:39:53,123 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2021-08-23 13:39:59,960 WARN o.j.r.PluginManager: Found JAR conflict: D:\tools\apache-jmeter-5.4.1\lib\jmeter-plugins-cmn-jmeter-0.5.jar and D:\tools\apache-jmeter-5.4.1\lib\jmeter-plugins-cmn-jmeter-0.4.jar
+2021-08-23 13:40:01,184 INFO o.j.r.JARSourceHTTP: Requesting https://jmeter-plugins.org/repo/?installID=windows_10-886515d7c22bdd8abb3b4d9d2572bea5-gui
+2021-08-23 13:40:01,324 WARN o.a.j.g.u.MenuFactory: Could not instantiate class: com.blazemeter.jmeter.control.WeightedSwitchControllerGui
+java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.apache.jmeter.gui.util.MenuFactory.getGUIComponent(MenuFactory.java:207) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.util.MenuFactory.initializeMenus(MenuFactory.java:151) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.util.MenuFactory.<clinit>(MenuFactory.java:107) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.control.gui.TestPlanGui.createPopupMenu(TestPlanGui.java:94) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.tree.JMeterTreeNode.createPopupMenu(JMeterTreeNode.java:184) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.EditCommand.doAction(EditCommand.java:46) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.ActionRouter.performAction(ActionRouter.java:87) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.ActionRouter.lambda$actionPerformed$0(ActionRouter.java:69) ~[ApacheJMeter_core.jar:5.4.1]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:316) [?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770) [?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:721) [?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:715) [?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:391) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85) ~[?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:740) ~[?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:117) ~[?:?]
+	at java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:190) ~[?:?]
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:235) ~[?:?]
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:233) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:312) [?:?]
+	at java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:233) ~[?:?]
+	at java.awt.Dialog.show(Dialog.java:1079) ~[?:?]
+	at java.awt.Component.show(Component.java:1720) ~[?:?]
+	at java.awt.Component.setVisible(Component.java:1667) ~[?:?]
+	at java.awt.Window.setVisible(Window.java:1032) ~[?:?]
+	at java.awt.Dialog.setVisible(Dialog.java:1014) ~[?:?]
+	at org.apache.jmeter.SplashScreen.lambda$showScreen$0(SplashScreen.java:95) ~[ApacheJMeter_core.jar:5.4.1]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:316) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:721) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:715) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:391) [?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85) [?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:740) [?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
+Caused by: java.lang.NoSuchMethodError: 'void kg.apc.jmeter.gui.Grid.<init>(java.lang.String, java.lang.String[], java.lang.Class[], java.lang.Object[], javax.swing.JTable)'
+	at com.blazemeter.jmeter.control.WeightedSwitchControllerGui.init(WeightedSwitchControllerGui.java:58) ~[jmeter-plugins-wsc-0.7.jar:?]
+	at com.blazemeter.jmeter.control.WeightedSwitchControllerGui.<init>(WeightedSwitchControllerGui.java:31) ~[jmeter-plugins-wsc-0.7.jar:?]
+	... 47 more
+2021-08-23 13:40:04,271 INFO o.j.r.PluginManager: Plugins Status: [jpgc-graphs-basic=2.0, jpgc-functions=2.1, jpgc-casutg=2.9, jpgc-dummy=0.4, jpgc-ffw=2.0, jpgc-fifo=0.2, jpgc-json=2.7, jpgc-perfmon=2.1, jpgc-plugins-manager=1.6, bzm-random-csv=0.7, jpgc-tst=2.5, jpgc-wsc=0.7, jmeter-core=5.4.1, jmeter-ftp=5.4.1, jmeter-http=5.4.1, jmeter-jdbc=5.4.1, jmeter-jms=5.4.1, jmeter-junit=5.4.1, jmeter-java=5.4.1, jmeter-ldap=5.4.1, jmeter-mail=5.4.1, jmeter-mongodb=5.4.1, jmeter-native=5.4.1, jmeter-tcp=5.4.1, jmeter-components=5.4.1, jpgc-standard=2.0]
+2021-08-23 13:40:19,222 INFO o.a.j.s.FileServer: Default base='D:\spring'
+2021-08-23 13:40:19,224 INFO o.a.j.g.a.Load: Loading file: D:\work\JmeterStress\kenyStressXmZone\kenyStressAll.jmx
+2021-08-23 13:40:19,224 INFO o.a.j.s.FileServer: Set new base='D:\work\JmeterStress\kenyStressXmZone'
+2021-08-23 13:40:19,426 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2021-08-23 13:40:19,459 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2021-08-23 13:40:19,460 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2021-08-23 13:40:19,461 INFO o.a.j.s.SaveService: Loading file: D:\work\JmeterStress\kenyStressXmZone\kenyStressAll.jmx
+2021-08-23 13:40:19,617 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-08-23 13:40:19,618 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-08-23 13:40:19,618 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-08-23 13:40:19,618 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-08-23 13:40:19,618 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2021-08-23 13:40:19,618 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2021-08-23 13:40:19,636 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2021-08-23 13:40:19,636 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2021-08-23 13:40:19,636 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2021-08-23 13:40:19,636 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2021-08-23 13:40:20,326 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2021-08-23 13:40:20,525 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2021-08-23 13:40:20,724 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2021-08-23 13:40:20,940 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2021-08-23 13:40:21,141 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2021-08-23 13:40:21,351 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2021-08-23 13:40:21,656 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2021-08-23 13:40:21,862 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2021-08-23 13:40:22,071 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2021-08-23 13:40:22,336 INFO o.a.j.s.FileServer: Set new base='D:\work\JmeterStress\kenyStressXmZone'
+2021-08-23 13:40:22,393 ERROR o.a.j.JMeter: Uncaught exception in thread Thread[AWT-EventQueue-0,6,main]
+java.lang.IllegalAccessError: class com.github.weisj.darklaf.ui.filechooser.DarkFilePaneUIBridge$DetailsTableModel (in unnamed module @0x7692d9cc) cannot access class sun.awt.shell.ShellFolder (in module java.desktop) because module java.desktop does not export sun.awt.shell to unnamed module @0x7692d9cc
+	at com.github.weisj.darklaf.ui.filechooser.DarkFilePaneUIBridge$DetailsTableModel.updateColumnInfo(DarkFilePaneUIBridge.java:1128) ~[darklaf-core-2.5.4.jar:2.5.4]
+	at com.github.weisj.darklaf.ui.filechooser.DarkFilePaneUIBridge$DetailsTableModel.<init>(DarkFilePaneUIBridge.java:1115) ~[darklaf-core-2.5.4.jar:2.5.4]
+	at com.github.weisj.darklaf.ui.filechooser.DarkFilePaneUIBridge.getDetailsTableModel(DarkFilePaneUIBridge.java:576) ~[darklaf-core-2.5.4.jar:2.5.4]
+	at com.github.weisj.darklaf.ui.filechooser.DarkFilePaneUIBridge$SortableListModel.<init>(DarkFilePaneUIBridge.java:1079) ~[darklaf-core-2.5.4.jar:2.5.4]
+	at com.github.weisj.darklaf.ui.filechooser.DarkFilePane.createList(DarkFilePane.java:137) ~[darklaf-core-2.5.4.jar:2.5.4]
+	at com.github.weisj.darklaf.ui.filechooser.DarkFileChooserUIBridge.createList(DarkFileChooserUIBridge.java:585) ~[darklaf-core-2.5.4.jar:2.5.4]
+	at com.github.weisj.darklaf.ui.filechooser.DarkFileChooserUIBridge$MetalFileChooserUIAccessor.createList(DarkFileChooserUIBridge.java:750) ~[darklaf-core-2.5.4.jar:2.5.4]
+	at com.github.weisj.darklaf.ui.filechooser.DarkFilePaneUIBridge.setViewType(DarkFilePaneUIBridge.java:376) ~[darklaf-core-2.5.4.jar:2.5.4]
+	at com.github.weisj.darklaf.ui.filechooser.DarkFilePaneUIBridge.propertyChange(DarkFilePaneUIBridge.java:890) ~[darklaf-core-2.5.4.jar:2.5.4]
+	at java.beans.PropertyChangeSupport.fire(PropertyChangeSupport.java:342) ~[?:?]
+	at java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:334) ~[?:?]
+	at java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:267) ~[?:?]
+	at java.awt.Component.firePropertyChange(Component.java:8713) ~[?:?]
+	at javax.swing.JComponent.setUI(JComponent.java:688) ~[?:?]
+	at javax.swing.JFileChooser.updateUI(JFileChooser.java:1838) ~[?:?]
+	at javax.swing.JFileChooser.setup(JFileChooser.java:395) ~[?:?]
+	at javax.swing.JFileChooser.<init>(JFileChooser.java:361) ~[?:?]
+	at javax.swing.JFileChooser.<init>(JFileChooser.java:308) ~[?:?]
+	at org.apache.jmeter.gui.util.FileDialoger.<clinit>(FileDialoger.java:42) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.Load.loadProjectFile(Load.java:156) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.Load.loadProjectFile(Load.java:101) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.LoadRecentProject.doActionAfterCheck(LoadRecentProject.java:71) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.AbstractActionWithNoRunningTest.doAction(AbstractActionWithNoRunningTest.java:44) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.ActionRouter.performAction(ActionRouter.java:87) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.ActionRouter.lambda$actionPerformed$0(ActionRouter.java:69) ~[ApacheJMeter_core.jar:5.4.1]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:316) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:721) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:715) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:391) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85) ~[?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:740) ~[?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
